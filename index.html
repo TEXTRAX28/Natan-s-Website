@@ -1,102 +1,467 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <script src="https://kit.fontawesome.com/1924235508.js" crossorigin="anonymous"></script>
-  <link rel="stylesheet" href="index.css"/>
-  <title>Biodata</title>
-  <style>
-  </style>
-</head>
-<body>
-  
-<div class="animateme">
-  <ul class="bg-bubbles">
-    <li></li>
-    <li></li>
-    <li></li>
-    <li></li>
-    <li></li>
-    <li></li>
-    <li></li>
-    <li></li>
-    <li></li>
-    <li></li>
-    <li></li>
-    <li></li>
-    <li></li>
-  </ul>
-</div>
-<!--container-1-->
-  <div class="container-1">
-    <h1>Biodata</h1>
-    <img class="profile-pic" src="WhatsApp Image 2023-05-21 at 18.56.59.jpg" alt="Profile Picture">
-    <div class="details">
-        <i class="fa-solid fa-signature"></i>
-      <span>Natanael Rehuel Santoso</span>
-    </div>
-    <div class="details">
-        <i class="fa-solid fa-school"></i>
-      <span>Student</span>
-    </div>
-    <div class="details">
-        <i class="fa-sharp fa-solid fa-location-dot"></i>
-      <span>Jakarta, Indonesia</span>
-    </div>
-    <div class="details">
-        <i class="fa-solid fa-envelope"></i>
-      <span>natanaelrehuels@gmail.com</span>
-    </div>
-    <div class="details">
-        <i class="fa-solid fa-phone"></i>
-      <span>(+62) 81212323764</span>
-    </div>
-  </div>
-  <!--container-1 selesai-->
-  
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script
+      src="https://kit.fontawesome.com/1924235508.js"
+      crossorigin="anonymous"
+    ></script>
 
-<!--container-2-->
+    <title>Biodata</title>
+    <style>
+      * {
+        margin: 0px;
+        padding: 0px;
+        box-sizing: border-box;
+      }
+
+      body {
+        background: #66a5ff;
+      }
+
+      .animateme {
+        position: fixed;
+        top: 0px;
+        left: 0px;
+        width: 100%;
+        height: 100%;
+        overflow: hidden;
+        z-index: -1;
+      }
+
+      .bg-bubbles {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        z-index: 1;
+      }
+      .bg-bubbles li {
+        position: absolute;
+        list-style: none;
+        display: block;
+        width: 40px;
+        height: 40px;
+        background-color: #353535;
+        bottom: 60px;
+        -webkit-animation: square 25s infinite;
+        animation: square 25s infinite;
+        -webkit-transition-timing-function: linear;
+        transition-timing-function: linear;
+        opacity: 0;
+      }
+
+      .bg-bubbles li:nth-child(1) {
+        left: 3%;
+        border-radius: 50em;
+        background: transparent;
+        border: 4px solid #353535;
+      }
+      .bg-bubbles li:nth-child(2) {
+        left: 6%;
+        width: 75px;
+        height: 75px;
+        -webkit-animation-delay: 2s;
+        animation-delay: 2s;
+        -webkit-animation-duration: 17s;
+        animation-duration: 17s;
+      }
+      .bg-bubbles li:nth-child(3) {
+        left: 15%;
+        width: 175px;
+        height: 175px;
+        -webkit-animation-delay: 4s;
+        animation-delay: 4s;
+      }
+      .bg-bubbles li:nth-child(4) {
+        left: 40%;
+        width: 90px;
+        height: 90px;
+        -webkit-animation-duration: 22s;
+        animation-duration: 22s;
+      }
+      .bg-bubbles li:nth-child(5) {
+        left: 70%;
+        background: transparent;
+        border: 4px solid #353535;
+      }
+      .bg-bubbles li:nth-child(6) {
+        left: 90%;
+        width: 90px;
+        height: 90px;
+        -webkit-animation-delay: 3s;
+        animation-delay: 3s;
+        border-radius: 50em;
+        background: transparent;
+        border: 4px solid #353535;
+      }
+      .bg-bubbles li:nth-child(7) {
+        left: 32%;
+        width: 60px;
+        height: 60px;
+        -webkit-animation-delay: 7s;
+        animation-delay: 7s;
+        background: transparent;
+        border: 4px solid #353535;
+      }
+      .bg-bubbles li:nth-child(8) {
+        left: 55%;
+        width: 50px;
+        height: 50px;
+        -webkit-animation-delay: 15s;
+        animation-delay: 15s;
+        -webkit-animation-duration: 40s;
+        animation-duration: 40s;
+      }
+      .bg-bubbles li:nth-child(9) {
+        left: 30%;
+        width: 140px;
+        height: 140px;
+        -webkit-animation-delay: 2s;
+        animation-delay: 2s;
+        -webkit-animation-duration: 40s;
+        animation-duration: 40s;
+        border-radius: 50em;
+        background: transparent;
+        border: 4px solid #353535;
+      }
+      .bg-bubbles li:nth-child(10) {
+        left: 90%;
+        width: 60px;
+        height: 60px;
+        -webkit-animation-delay: 11s;
+        animation-delay: 11s;
+      }
+      .bg-bubbles li:nth-child(11) {
+        left: 10%;
+        width: 40px;
+        height: 40px;
+        -webkit-animation-delay: 13s;
+        animation-delay: 13s;
+        border-radius: 50em;
+      }
+      .bg-bubbles li:nth-child(12) {
+        left: 55%;
+        width: 175px;
+        height: 175px;
+        -webkit-animation-delay: 7s;
+        animation-delay: 7s;
+        background: transparent;
+        border: 4px solid #353535;
+      }
+
+      .bg-bubbles li:nth-child(13) {
+        left: 65%;
+        width: 100px;
+        height: 100px;
+        -webkit-animation-delay: 8s;
+        animation-delay: 8s;
+        border-radius: 50em;
+      }
+
+      @-webkit-keyframes square {
+        0% {
+          -webkit-transform: translateY(0);
+          transform: translateY(0);
+          opacity: 0;
+        }
+        50% {
+          opacity: 1;
+        }
+        100% {
+          -webkit-transform: translateY(-700px) rotate(600deg);
+          transform: translateY(-700px) rotate(600deg);
+          opacity: 1;
+        }
+      }
+      @keyframes square {
+        0% {
+          -webkit-transform: translateY(0);
+          transform: translateY(0);
+          opacity: 0;
+        }
+        50% {
+          opacity: 1;
+        }
+        100% {
+          -webkit-transform: translateY(-700px) rotate(600deg);
+          transform: translateY(-700px) rotate(600deg);
+          opacity: 0;
+        }
+      }
+
+      .container-1 {
+        max-width: 30rem;
+        margin: 50px auto;
+        background-color: whitesmoke;
+        padding: 50px;
+        justify-content: center;
+        text-align: center;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+      }
+
+      .wrapper {
+        align-self: start;
+      }
+
+      h1 {
+        margin-bottom: 20px;
+        color: black;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+      .profile-pic {
+        width: 200px;
+        height: 200px;
+        border-radius: 50%;
+        margin-bottom: 20px;
+        object-fit: cover;
+        box-shadow: -20px 20px 20px rgba(0, 0, 0, 0.3);
+        justify-content: center;
+        display: center;
+        align-content: center;
+      }
+      .details {
+        text-align: left;
+        margin-bottom: 20px;
+        color: #333;
+      }
+      .details strong {
+        width: 100px;
+        display: inline-block;
+      }
+      .details span {
+        margin-left: 10px;
+        text-align: left;
+      }
+      .icon {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: #333;
+        column-gap: 10px;
+        margin: 0 auto;
+        padding: 8px;
+        width: fit-content;
+      }
+      .fa-color {
+        color: #333;
+      }
+
+      .text-achievement {
+        text-align: left;
+        font-size: 30px;
+        grid-template-columns: repeat(3, 1fr);
+        grid-gap: 30px;
+        margin-bottom: 1vh;
+      }
+
+      .footer-container {
+        background-color: #fff;
+        height: 12.3vh;
+        display: flex;
+      }
+
+      .text {
+        display: block;
+      }
+
+      .button__container {
+        position: relative;
+        width: 100%;
+        height: 3.5rem;
+        left: 0;
+      }
+
+      label {
+        position: absolute;
+        width: 45px;
+        height: 22px;
+        right: 20px;
+        top: 20px;
+        border: 2px solid;
+        border-radius: 20px;
+      }
+
+      label:before {
+        position: absolute;
+        content: " ";
+        width: 17px;
+        height: 90%;
+        top: 1px;
+        left: 1.5px;
+        cursor: pointer;
+        border-radius: 100%;
+        background-color: #000;
+        transition: 0.4s;
+      }
+
+      label.active:before {
+        margin-left: 18px;
+        left: initial;
+      }
+
+      label.active {
+        background-color: white;
+      }
+
+      .button__container.active {
+        background-color: black;
+      }
+
+      body.night {
+        background: #000;
+        color: black;
+      }
+
+      /* #dark-change span {
+        opacity: 0;
+      } */
+
+      label {
+        display: flex;
+        align-items: center;
+        padding-left: 0.35rem;
+        justify-content: start;
+      }
+
+      label.active#dark-change span {
+        opacity: 1;
+        color: black;
+        font-family: sans-serif;
+        font-size: 0.6rem;
+        font-weight: 600;
+      }
+
+      #dark-change span {
+        opacity: 0;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <div class="button__container">
+        <label id="dark-change"></label>
+      </div>
+    </header>
+    <div class="animateme">
+      <ul class="bg-bubbles">
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+      </ul>
+    </div>
+    <!--container-1-->
+    <div class="container-1">
+      <h1>Biodata</h1>
+      <img class="profile-pic" src="foto.jpg" alt="Profile Picture" />
+      <div class="wrapper">
+        <div class="details">
+          <i class="fa-solid fa-signature"></i>
+          <span>Natanael Rehuel Santoso</span>
+        </div>
+        <div class="details">
+          <i class="fa-solid fa-school"></i>
+          <span>Student</span>
+        </div>
+        <div class="details">
+          <i class="fa-sharp fa-solid fa-location-dot"></i>
+          <span>Jakarta, Indonesia</span>
+        </div>
+        <div class="details">
+          <i class="fa-solid fa-envelope"></i>
+          <span>natanaelrehuels@gmail.com</span>
+        </div>
+        <div class="details">
+          <i class="fa-solid fa-phone"></i>
+          <span>(+62) 81212323764</span>
+        </div>
+      </div>
+    </div>
+    <!--container-1 selesai-->
+
+    <!--container-2-->
     <div class="container-1">
       <div class="text-achievement">
         <i class="fa-solid fa-trophy"></i>
-      <span>Achievements</span>
-    </div>
-        <div class="details">
+        <span>Achievements</span>
+      </div>
+      <div class="details">
         <i class="fa-solid fa-chess-king"></i>
-      <span>Participating in online SMAK 3 Week Penabur 2020 Chess Tournament</span>
-    </div>
-    <div class="details">
+        <span
+          >Participating in online SMAK 3 Week Penabur 2020 Chess
+          Tournament</span
+        >
+      </div>
+      <div class="details">
         <i class="fa-solid fa-chess-queen"></i>
-      <span>Participating in SMAK 3 Week Penabur 2022 Chess Tournament</span>
-    </div>
-    <div class="details">
+        <span>Participating in SMAK 3 Week Penabur 2022 Chess Tournament</span>
+      </div>
+      <div class="details">
         <i class="fa-sharp fa-solid fa-duotone fa-cube"></i>
-      <span>Participating in <a href="https://www.worldcubeassociation.org/competitions/JakartaOpen2020/results/all?event=333" target="_blank">Jakarta Open 2022 Rubics Tournament</a></span>
-    </div>
-    <div class="details">
+        <span
+          >Participating in
+          <a
+            href="https://www.worldcubeassociation.org/competitions/JakartaOpen2020/results/all?event=333"
+            target="_blank"
+            >Jakarta Open 2022 Rubics Tournament</a
+          ></span
+        >
+      </div>
+      <div class="details">
         <i class="fa-solid fa-gamepad"></i>
-      <span>3rd Winner of SMAK 3 Week Penabur 2022 Mobile Legend Tournament</span>
-    </div>
-  </div>
-  <div class="icon">
-    <a href="https://www.youtube.com/@natanaelrehuels1041/featured" target="_blank">
-    <i class="fa-brands fa-youtube fa-2x fa-color"></i>
-    </a>
-    <a href="https://www.instagram.com/natanael_r_s/" target="_blank">
-    <i class="fa-brands fa-instagram fa-2x fa-color"></i>
-    </a>
-    <a href="https://wa.link/8l0cse" target="_blank">
-    <i class="fa-brands fa-whatsapp fa-2x fa-color"></i>
-    </a>
-    </a>
-    <a href="https://line.me/ti/p/gwnatanrs" target="_blank">
-    <i class="fa-brands fa-line fa-2x fa-color"></i>
-    </a>
-    <a href="https://github.com/TEXTRAX28/Natan-s-Website" target="_blank">
-    <i class="fa-brands fa-github fa-2x fa-color"></i>
-    </a>
+        <span
+          >3rd Winner of SMAK 3 Week Penabur 2022 Mobile Legend Tournament</span
+        >
+      </div>
     </div>
     <!--container-2 selesai-->
+    <footer class="footer-container">
+      <div class="icon">
+        <a
+          href="https://www.youtube.com/@natanaelrehuels1041/featured"
+          target="_blank"
+        >
+          <i class="fa-brands fa-youtube fa-2x fa-color"></i>
+        </a>
+        <a href="https://www.instagram.com/natanael_r_s/" target="_blank">
+          <i class="fa-brands fa-instagram fa-2x fa-color"></i>
+        </a>
+        <a href="https://wa.link/8l0cse" target="_blank">
+          <i class="fa-brands fa-whatsapp fa-2x fa-color"></i>
+        </a>
+        <a href="https://line.me/ti/p/gwnatanrs" target="_blank">
+          <i class="fa-brands fa-line fa-2x fa-color"></i>
+        </a>
+        <a href="https://github.com/TEXTRAX28/Natan-s-Website" target="_blank">
+          <i class="fa-brands fa-github fa-2x fa-color"></i>
+        </a>
+      </div>
+    </footer>
+    <script>
+      const content = document.getElementsByTagName("body")[0];
+
+      const darkModeBtn = document.getElementById("dark-change");
+
+      darkModeBtn.addEventListener("click", function () {
+        darkModeBtn.classList.toggle("active");
+        content.classList.toggle("night");
+      });
+    </script>
   </body>
 </html>
